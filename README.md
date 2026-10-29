@@ -9,7 +9,8 @@ the script from anywhere.
 
 ## Setup
 
-1. Edit `config.json` in this folder: `gitlab_url`, and `repos` (or `search_roots`).
+1. `cp config.example.json config.json`, then edit `gitlab_url` and `repos` (or
+   `search_roots`). `config.json` is gitignored — credentials, never commit it.
 2. Save a PAT with `read_api` + `read_repository` as `token` in this folder:
 
 ```bash
@@ -44,5 +45,5 @@ A macOS banner fires when a draft review is posted (`"notify": false` in
 
 - `mra.py` — everything
 - `prompt.md` — the prompt, with `{{iid}}`, `{{base_sha}}`, `{{mr_ref}}` placeholders
-- `config.json` — settings
+- `config.example.json` — copy to `config.json` and edit
 - `test_e2e.py` — stub GitLab API + fake `claude` + real git repos; run after edits
