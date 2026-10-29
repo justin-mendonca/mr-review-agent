@@ -1,0 +1,18 @@
+{
+  "gitlab_url": "https://gitlab.yourco.com",
+  "token_file": "token",
+
+  "repos": {
+    "group/sub/project": "~/src/project"
+  },
+  "search_roots": ["~/src"],
+
+  "claude_bin": "claude",
+  "max_turns": 30,
+  "max_budget_usd": 1.0,
+  "allowed_tools": "Read,Grep,Glob,Bash(git *)",
+
+  "poll_seconds": 300,
+  "skip_drafts": true,
+  "notify": true
+}

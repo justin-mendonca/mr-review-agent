@@ -1,0 +1,9 @@
+token
+config.json
+state.json
+logs/
+worktrees/
+__pycache__/
+
+# build artifact
+mr-review-agent.tar.gz
